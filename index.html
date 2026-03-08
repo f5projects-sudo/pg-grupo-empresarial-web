@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P&G Grupo Empresarial | Futuro Global</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="bubble-canvas"></canvas>
+
+    <nav id="navbar">
+        <div class="logo">P&G <span>Grupo Empresarial</span></div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#divisiones">Divisiones</a></li>
+            <li><a href="#filosofia">Filosofía</a></li>
+            <li><a href="#gobernanza">Gobernanza</a></li>
+            <li><a href="#activos">Activos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button class="btn-lang">EN</button>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content">
+            <p class="tagline">HOLDING EMPRESARIAL MULTISECTORIAL</p>
+            <h1>Construyendo el futuro <br><span class="highlight">con visión global</span></h1>
+            <p class="description">P&G Grupo Empresarial es un holding diversificado líder en soluciones de capital,
+                infraestructura digital, real estate y logística de alto impacto.</p>
+            <div class="cta-group">
+                <a href="#divisiones" class="btn primary">Nuestras Divisiones</a>
+                <a href="#contacto" class="btn secondary">Hablemos</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="divisiones" class="divisions-grid">
+        <div class="container">
+            <h2 class="section-title">Áreas de Negocio</h2>
+            <div class="grid">
+                <!-- Financial -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-img" style="background-image: url('assets/financial.png')">
+                            </div>
+                            <div class="card-info">
+                                <h3>División Financiera</h3>
+                                <span class="flip-hint">Ver Detalles →</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>División Financiera</h3>
+                            <p>Plataforma financiera integral especializada en consumer lending y estructuración de
+                                crédito, con enfoque disciplinado en originación, underwriting avanzado y administración
+                                estratégica de portafolio. Integra procesamiento de pagos, diseño de estructuras
+                                waterfall, capital allocation y optimización de cash flow. Mediante data analytics,
+                                modelación predictiva y risk management integral, fortalece la calidad de activos, el
+                                control de exposición y la sostenibilidad financiera bajo estrictos estándares
+                                corporativos y regulatorios.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Real Estate -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-img" style="background-image: url('assets/realestate.png')">
+                            </div>
+                            <div class="card-info">
+                                <h3>División Inmobiliaria</h3>
+                                <span class="flip-hint">Ver Detalles →</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>División Inmobiliaria</h3>
+                            <p>Plataforma integral de Hospitality & Real Estate enfocada en el desarrollo, adquisición y
+                                administración de activos generadores de flujo en mercados estratégicos con fuerte
+                                presencia en el sector turismo. Combina estructuración financiera, asset management y
+                                servicios personalizados de alto nivel, con enfoque en valorización patrimonial,
+                                eficiencia operativa y sostenibilidad a largo plazo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Digital -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-img" style="background-image: url('assets/digital.png')">
+                            </div>
+                            <div class="card-info">
+                                <h3>Infraestructura Digital</h3>
+                                <span class="flip-hint">Ver Detalles →</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Infraestructura Digital</h3>
+                            <p>Plataforma tecnológica especializada en desarrollo de software empresarial, arquitectura
+                                de sistemas, integración de APIs y construcción de infraestructura digital escalable. La
+                                división impulsa automatización de procesos, analítica avanzada de datos, ciberseguridad
+                                y gobierno de la información, fortaleciendo la eficiencia operativa, la trazabilidad y
+                                la toma de decisiones estratégicas del grupo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- BPO -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-img" style="background-image: url('assets/bpo.png')">
+                            </div>
+                            <div class="card-info">
+                                <h3>Servicios Empresariales</h3>
+                                <span class="flip-hint">Ver Detalles →</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Servicios Empresariales</h3>
+                            <p>Plataforma integral de Business Process Outsourcing (BPO – Nearshore) orientada a contact
+                                centers y gestión operativa especializada, diseñada para atender mercados
+                                internacionales con eficiencia de costos, afinidad cultural y proximidad horaria. La
+                                división integra atención multicanal, customer experience management, cobranza y
+                                servicing de portafolios, apoyada en métricas de desempeño, control de calidad y
+                                cumplimiento normativo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Energy -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-img" style="background-image: url('assets/energy.png')">
+                            </div>
+                            <div class="card-info">
+                                <h3>Logística Energética</h3>
+                                <span class="flip-hint">Ver Detalles →</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Logística Energética</h3>
+                            <p>Plataforma especializada en logística energética e industrial que integra operaciones con
+                                maquinaria vacuum, cisternas de H2O y transporte especializado de combustibles. Gestiona
+                                transporte de combustible aeronáutico, suministro de combustible para vehículos y
+                                distribución de diésel, bajo estrictos protocolos de seguridad operativa, control
+                                técnico y cumplimiento normativo. Su infraestructura y equipo técnico permiten ejecución
+                                eficiente, trazabilidad logística y confiabilidad en entornos industriales exigentes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- F&B -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-img" style="background-image: url('assets/fb.png')">
+                            </div>
+                            <div class="card-info">
+                                <h3>Activos F&B</h3>
+                                <span class="flip-hint">Ver Detalles →</span>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <h3>Activos F&B</h3>
+                            <p>Plataforma especializada en coinversión, copropiedad y gerencia estratégica de activos en
+                                el sector de alimentos y bebidas, con enfoque principal en restaurantes, bares,
+                                discotecas y conceptos de entretenimiento vinculados al ecosistema turístico y
+                                lifestyle. La división participa en el desarrollo, estructuración y operación de marcas
+                                gastronómicas, venues de entretenimiento y activos de alto tráfico, integrando control
+                                financiero, diseño conceptual, posicionamiento comercial y excelencia operativa. Su
+                                modelo combina experiencia en gestión, disciplina de costos y optimización de ingresos
+                                para fortalecer la generación de flujo y la valorización patrimonial dentro del
+                                portafolio del grupo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="filosofia" class="corporate-philosophy">
+        <div class="container">
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <h2 class="section-accent-title">Misión</h2>
+                    <p>Desarrollar, adquirir y operar activos y plataformas estratégicas mediante una asignación
+                        disciplinada de capital propio, gestión prudente del riesgo y fortalecimiento continuo de
+                        nuestras capacidades operativas, con un horizonte de largo plazo orientado a la estabilidad y
+                        creación sostenida de valor.</p>
+                </div>
+                <div class="philosophy-item">
+                    <h2 class="section-accent-title">Visión</h2>
+                    <p>Consolidar un group empresarial privado multiactivos con presencia internacional, reconocido por
+                        su disciplina de capital, diversificación estructural, excelencia operativa y permanencia
+                        institucional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gobernanza" class="corporate-governance">
+        <div class="container">
+            <div class="governance-grid">
+                <div class="governance-item">
+                    <h2 class="section-accent-title">Gobernanza & Cumplimiento</h2>
+                    <p>P&G Grupo Empresarial opera bajo un modelo estructurado de gobierno corporativo orientado a la
+                        transparencia, la disciplina financiera y la sostenibilidad institucional. El grupo implementa
+                        marcos formales de cumplimiento legal y regulatorio en cada jurisdicción aplicable, así como
+                        políticas internas de control, auditoría y supervisión independiente.</p>
+                    <p>Nuestra estructura de gobernanza contempla gestión integral de riesgos, segregación de funciones
+                        críticas, monitoreo continuo de cumplimiento normativo y protocolos internos de prevención de
+                        conflictos de interés.</p>
+                </div>
+                <div class="governance-item">
+                    <h2 class="section-accent-title">Responsabilidad Corporativa & Ambiental</h2>
+                    <p>El grupo integra principios de responsabilidad corporativa en todas sus divisiones operativas,
+                        promoviendo prácticas éticas, sostenibilidad ambiental y compromiso social.</p>
+                    <p>En materia ambiental, se prioriza la eficiencia energética, la optimización de recursos, el
+                        manejo responsable de residuos industriales y la reducción progresiva de impactos operativos. En
+                        el ámbito social, P&G impulsa generación de empleo formal, capacitación continua y desarrollo de
+                        talento local en los mercados donde mantiene presencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="activos" class="corporate-assets">
+        <div class="container">
+            <h2 class="section-accent-title">Activos & Capital Humano</h2>
+            <div class="assets-content">
+                <div class="content-left">
+                    <p>P&G Grupo Empresarial consolida activos estratégicos diversificados en sectores financieros,
+                        inmobiliarios, tecnológicos y energéticos, priorizando estructuras resilientes y generadoras de
+                        flujo sostenible.</p>
+                </div>
+                <div class="content-right">
+                    <p>En materia de capital humano, la organización considera a su equipo como un activo fundamental.
+                        P&G promueve liderazgo profesional, formación técnica especializada, cultura de cumplimiento y
+                        desarrollo continuo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-flex">
+                <div class="about-header">
+                    <p class="tagline">SOBRE NOSOTROS</p>
+                    <h2 class="typing-title" data-text="Un grupo empresarial con visión de largo plazo"></h2>
+                    <div class="about-content">
+                        <p class="typing-text"
+                            data-text="Desarrollar, adquirir y operar activos y plataformas estratégicas mediante una asignación disciplinada de capital propio, gestión prudente del riesgo y fortalecimiento continuo de nuestras capacidades operativas, con un horizonte de largo plazo orientado a la estabilidad y creación sostenida de valor.">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="stats-grid-container">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="6">0</span>
+                            <p class="stat-label">DIVISIONES</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="20">0</span><span class="stat-suffix">+</span>
+                            <p class="stat-label">AÑOS DE EXPERIENCIA</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="300">0</span><span class="stat-suffix">+</span>
+                            <p class="stat-label">PROFESIONALES</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="4">0</span>
+                            <p class="stat-label">PAÍSES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pilares" class="corporate-pillars">
+        <div class="container">
+            <div class="pillars-grid">
+                <div class="pillar-item">
+                    <div class="pillar-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 2L3 7v9l9 5 9-5V7l-9-5z" />
+                            <path d="M12 22V12" />
+                            <path d="M12 12l9-5" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </div>
+                    <h3>Integridad</h3>
+                    <p>Los más altos estándares éticos en cada decisión estratégica y operativa.</p>
+                </div>
+                <div class="pillar-item">
+                    <div class="pillar-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M2 12h20" />
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z" />
+                        </svg>
+                    </div>
+                    <h3>Visión Global</h3>
+                    <p>Perspectiva internacional con ejecución local adaptada a cada mercado.</p>
+                </div>
+                <div class="pillar-item">
+                    <div class="pillar-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 1v22" />
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg>
+                    </div>
+                    <h3>Disciplina de Capital</h3>
+                    <p>Asignación rigurosa orientada a preservación y creación de valor a largo plazo.</p>
+                </div>
+                <div class="pillar-item">
+                    <div class="pillar-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3>Capital Humano</h3>
+                    <p>Talento multidisciplinario como activo estratégico fundamental del grupo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="footer-grid contact-grid">
+                <div class="footer-info">
+                    <h2>Hablemos de negocios</h2>
+                    <p>Conecta con nuestros líderes para explorar oportunidades estratégicas globales y descubrir cómo
+                        nuestras divisiones pueden acelerar tu crecimiento.</p>
+                </div>
+                <div class="footer-form">
+                    <form>
+                        <input type="text" placeholder="Tu Nombre">
+                        <input type="email" placeholder="Email Corporativo">
+                        <textarea placeholder="Cuéntanos tu proyecto" rows="4"></textarea>
+                        <button type="submit" class="btn primary">Enviar Propuesta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-brand">
+                    <h2>P&G <span>Grupo Empresarial</span></h2>
+                    <p>Construyendo el futuro con visión global.</p>
+                </div>
+
+                <!-- Column 2: Divisions -->
+                <div class="footer-links">
+                    <h3>Divisiones</h3>
+                    <ul>
+                        <li><a href="#divisions">División Financiera</a></li>
+                        <li><a href="#divisions">División Inmobiliaria</a></li>
+                        <li><a href="#divisions">División Infraestructura Digital</a></li>
+                        <li><a href="#divisions">División Servicios Empresariales</a></li>
+                        <li><a href="#divisions">División Logística Energética</a></li>
+                        <li><a href="#divisions">División F&B Assets</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Corporate -->
+                <div class="footer-links">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Inversores</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 P&G Grupo Empresarial. Todos los derechos reservados.</p>
+                <div class="locations">
+                    <span>🇺🇸 Miami, FL</span>
+                    <span class="dot">·</span>
+                    <span>🇻🇪 Margarita</span>
+                    <span class="dot">·</span>
+                    <span>🇩🇴 Punta Cana</span>
+                    <span class="dot">·</span>
+                    <span>🇲🇽 Guadalajara</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
