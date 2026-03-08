@@ -569,6 +569,139 @@ h1 {
     color: rgba(255, 255, 255, 0.2);
 }
 
+/* Corporate Philosophy, Governance, and Assets */
+.corporate-philosophy,
+.corporate-governance,
+.corporate-assets {
+    padding: 100px 0;
+    border-top: 1px solid var(--glass-border);
+}
+
+.section-accent-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 3px solid #555;
+    /* Gray vertical accent */
+    color: var(--primary-orange);
+}
+
+.philosophy-grid,
+.governance-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.philosophy-item p,
+.governance-item p,
+.assets-content p {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.corporate-assets .assets-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+/* Corporate Pillars - Premium Dark Glassmorphism */
+.corporate-pillars {
+    background: transparent;
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.pillar-item {
+    padding: 80px 60px;
+    border-bottom: 1px solid var(--glass-border);
+    text-align: left;
+    transition: all 0.4s ease;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.pillar-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 0;
+    background: var(--primary-orange);
+    transition: height 0.4s ease;
+}
+
+.pillar-item:nth-child(odd) {
+    border-right: 1px solid var(--glass-border);
+}
+
+.pillar-item:last-child,
+.pillar-item:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.pillar-item:hover {
+    background: var(--glass-bg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.pillar-item:hover::before {
+    height: 100%;
+}
+
+.pillar-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--text-gray);
+    margin-bottom: 25px;
+    transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.pillar-item:hover .pillar-icon {
+    color: var(--primary-orange);
+    transform: scale(1.1);
+}
+
+.pillar-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 1.2px;
+}
+
+.pillar-item h3 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--text-white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    transition: color 0.4s ease;
+}
+
+.pillar-item p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--text-gray);
+    margin: 0;
+    max-width: 450px;
+}
+
 /* --- Responsive Optimizations --- */
 
 /* Tablet & Mobile (Standard Breakpoint) */
