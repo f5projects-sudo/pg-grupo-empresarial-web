@@ -90,7 +90,7 @@ body {
 
 /* Hamburger Menu Base Styles (Hidden by default) */
 .menu-checkbox {
-    display: none;
+    display: none !important;
 }
 
 .hamburger {
@@ -602,7 +602,7 @@ h1 {
     }
 
     .menu-checkbox:checked~.nav-links {
-        right: 0;
+        right: 0 !important;
     }
 
     .btn-lang {
@@ -784,71 +784,18 @@ h1 {
     max-width: 450px;
 }
 
-/* Responsive Pillars & General Mobile Optimizations */
+/* Responsive Pillars */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2.8rem;
-    }
-
-    .hero-content .description {
-        font-size: 1.1rem;
-    }
-
-    .section-title {
-        font-size: 2.2rem;
-        margin-bottom: 40px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .card {
-        height: auto;
-        min-height: 420px;
-    }
-
-    .about-flex {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .about-header {
-        padding-left: 20px;
-    }
-
-    .about-header h2 {
-        font-size: 2.4rem;
-    }
-
-    .philosophy-grid,
-    .governance-grid,
-    .corporate-assets .assets-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
     .pillars-grid {
         grid-template-columns: 1fr;
     }
 
     .pillar-item {
-        padding: 40px 25px;
+        padding: 50px 30px;
         border-right: none !important;
     }
 
     .pillar-item:nth-last-child(2) {
         border-bottom: 1px solid var(--glass-border);
-    }
-
-    .about-image-mosaic {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 200px);
-        height: auto;
-    }
-
-    .mosaic-item.main {
-        grid-row: span 1;
     }
 }
