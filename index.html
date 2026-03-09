@@ -13,7 +13,47 @@
     <canvas id="bubble-canvas"></canvas>
 
     <nav id="navbar">
-        <div class="logo">P&G <span>Grupo Empresarial</span></div>
+        <div class="logo" style="display: flex; align-items: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="60" viewBox="0 0 380 115">
+                <rect width="380" height="115" fill="none" />
+                <g transform="translate(18,32)" fill="none" stroke="#C8A246" stroke-width="3.3" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <!-- antennae -->
+                    <path d="M28 12 C24 5, 22 1, 18 0" />
+                    <path d="M37 12 C41 5, 43 1, 47 0" />
+                    <circle cx="18" cy="0" r="4.2" />
+                    <circle cx="47" cy="0" r="4.2" />
+
+                    <!-- head -->
+                    <rect x="20" y="12" width="25" height="16" rx="8" />
+
+                    <!-- wings -->
+                    <ellipse cx="7" cy="24" rx="18" ry="10" transform="rotate(-18 7 24)" />
+                    <ellipse cx="58" cy="24" rx="18" ry="10" transform="rotate(18 58 24)" />
+
+                    <!-- collar -->
+                    <ellipse cx="32.5" cy="24" rx="8.5" ry="4.2" />
+
+                    <!-- body -->
+                    <ellipse cx="32.5" cy="43" rx="19" ry="27" />
+
+                    <!-- stripes clipped to body -->
+                    <clipPath id="bodyClip">
+                        <ellipse cx="32.5" cy="43" rx="19" ry="27" />
+                    </clipPath>
+                    <g clip-path="url(#bodyClip)">
+                        <path d="M13.5 34 H51.5" />
+                        <path d="M13.5 43 H51.5" />
+                        <path d="M13.5 52 H51.5" />
+                    </g>
+                </g>
+
+                <text x="100" y="60" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="700"
+                    fill="#ffffff">P&amp;G</text>
+                <text x="100" y="88" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700"
+                    letter-spacing="5" fill="#C8A246">GRUPO EMPRESARIAL</text>
+            </svg>
+        </div>
 
         <input type="checkbox" id="menu-toggle" class="menu-checkbox">
         <label for="menu-toggle" class="hamburger">
@@ -177,7 +217,7 @@
                             <p>Plataforma especializada en coinversión, copropiedad y gerencia estratégica de activos en
                                 el sector de alimentos y bebidas, con enfoque principal en restaurantes, bares,
                                 discotecas y conceptos de entretenimiento vinculados al ecosistema turístico y
-                                lifestyle. La división participa en el desarrollo, estructuración y operación de marcas
+                                lifestyle. La división participa en el desarrollo, estructuración y operation de marcas
                                 gastronómicas, venues de entretenimiento y activos de alto tráfico, integrando control
                                 financiero, diseño conceptual, posicionamiento comercial y excelencia operativa. Su
                                 modelo combina experiencia en gestión, disciplina de costos y optimización de ingresos
