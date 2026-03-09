@@ -155,4 +155,49 @@ document.addEventListener('DOMContentLoaded', () => {
             if (menuToggle) menuToggle.checked = false;
         });
     });
+
+    // Contact Form Submission
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerText;
+
+            // Collect data
+            const formData = new FormData(contactForm);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+                // UI Feedback: Loading
+                submitBtn.disabled = true;
+                submitBtn.innerText = 'Enviando...';
+                submitBtn.style.opacity = '0.7';
+
+                const response = await fetch('https://n8n.automationf5networking.com/webhook/c7fe6f6b-c6e1-47b1-9dfd-27a848509052', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    alert('¡Gracias! Tu propuesta ha sido enviada con éxito.');
+                    contactForm.reset();
+                } else {
+                    throw new Error('Error en el servidor');
+                }
+            } catch (error) {
+                console.error('Submission error:', error);
+                alert('Hubo un problema al enviar el formulario. Por favor, inténtalo de nuevo.');
+            } finally {
+                // UI Feedback: Reset
+                submitBtn.disabled = false;
+                submitBtn.innerText = originalBtnText;
+                submitBtn.style.opacity = '1';
+            }
+        });
+    }
 });
